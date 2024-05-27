@@ -9,17 +9,14 @@
     <style>
         li {
             display: inline-block;
+            padding-inline: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>
-            Marko Gidej's Website
-        </h1>
-        <h2>
-            Contact
-        </h2>
+        <h1>Marko Gidej's Website</h1>
+        <h2>Contact</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,17 +35,22 @@
         </nav>
     </header>
     <div>
-        <p>
-            Contact me!
-        </p>
+        <h3>Use this form to contact me!</h3>
         <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email">
+            
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" placeholder="Enter comment">What up</textarea>
 
+            <button type="submit">Submit</button>
         </form>
     </div>
     <footer>
-    <h6>
-        2024 - For Coding Temple
-    </h6>
+    <h6>2024 - For Coding Temple</h6>
     </footer>
 </body>
 </html>
